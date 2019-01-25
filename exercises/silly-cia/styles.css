@@ -1,0 +1,38 @@
+.container{
+  position: relative;
+  width: 80%;
+  margin: auto;
+  padding: 50px;
+}
+p{
+  line-height: 25px;
+}
+
+a{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+.container img{
+  float: left;
+  margin-right: 40px;
+}
+
+.main-headline{
+  text-align: center;
+  color: green;
+  font-family: Georgia, serif;
+}
+.sub-headline{
+  text-align: center;
+  font-family: Georgia, serif;
+}
+p.u-like{
+  text-transform: uppercase;
+}
+
+.events{
+  list-style-position: inside;
+  text-indent: 40px;
+}
