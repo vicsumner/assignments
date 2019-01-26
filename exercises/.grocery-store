@@ -1,0 +1,12 @@
+var shopper = {
+   id: 0020,
+   firstName: "Bob",
+   lastName: "Jenkins",
+   isFrequentShopper: true,
+   groceryCart: ["apples", "bread", "butter", "tea"],
+   fullName: function() {
+     console.log(this.firstName + " " + this.lastName);
+  }
+};
+console.log(shopper.fullName());
+

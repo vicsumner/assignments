@@ -1,0 +1,54 @@
+body{
+  position: relative;
+  width: 85%;
+  padding: o 50px;
+  margin: auto;
+}
+
+header{
+  text-align: center;
+}
+
+h1 {
+    font-size: 5em;
+    text-decoration: underline;
+    color: deepskyblue;
+    margin-bottom: 0;
+    font-style: italic;
+}
+
+h3{color: #009688;}
+    
+
+header h2 {
+    font-size: 2.2em;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+section.left-side-story{
+  float: left;
+  /* clear: both; */
+  width: 65%;
+  margin-right: 45px;
+  }
+
+.rght-side-story{
+float: left;
+/* clear: both; */
+width: 25%;
+}
+
+.rght-side-story h2{
+    font-size: 1.7em;
+    font-weight: 700;
+    font-family: sans-serif;
+    margin-bottom: 0;
+}
+
+img{
+  width:100%;
+  clear: both;
+  display: block;
+  margin: 1.5em auto;
+}

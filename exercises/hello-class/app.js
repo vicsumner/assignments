@@ -7,9 +7,9 @@
 
 // function declaration
 function sayHello(name){
-  console.log("Hello " + name)
-}
-sayHello("Vicki")
+  return("Hello " + name)
+};
+console.log (sayHello("Vicki"));
 
 
 //argument
