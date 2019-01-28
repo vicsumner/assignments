@@ -1,11 +1,11 @@
 
-//function expression
+// function expression--------------------
 // var sayHello = function () {
-//   console.log("hello class")
+//   console.log("hello class");
 // }
-// sayHello()
+// sayHello();
 
-// function declaration
+// function declaration-------------------
 function sayHello(name){
   return("Hello " + name)
 };
