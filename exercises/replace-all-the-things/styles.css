@@ -1,31 +1,45 @@
 body{
   position: relative;
   width: 85%;
-  padding: o 50px;
+  padding: 0 50px;
   margin: auto;
 }
 
-header{
-  text-align: center;
-}
+
 
 h1 {
     font-size: 5em;
     text-decoration: underline;
-    color: deepskyblue;
+    color:#cccccc;
     margin-bottom: 0;
     font-style: italic;
+    text-align: center;
+}
+h2 {
+    text-align: center;
 }
 
-h3{color: #009688;}
+.left-side-story h3{
+  color: #009688;
+  font-size: 4.5em;
+    margin: 0;
+    line-height: 1.1em;
+    text-transform: capitalize;
+}
     
 
 header h2 {
     font-size: 2.2em;
     margin: 0;
     margin-bottom: 50px;
+    color:#ffffff;
+    padding-bottom: 15px;
 }
 
+p.caption {
+    font-size: .75em;
+    color: #545252;
+}
 section.left-side-story{
   float: left;
   /* clear: both; */
@@ -37,6 +51,9 @@ section.left-side-story{
 float: left;
 /* clear: both; */
 width: 25%;
+background-color: #eeeeee;
+padding: 30px;
+padding-top: 20px;
 }
 
 .rght-side-story h2{
@@ -44,6 +61,7 @@ width: 25%;
     font-weight: 700;
     font-family: sans-serif;
     margin-bottom: 0;
+    color: #291cb1;
 }
 
 img{
@@ -51,4 +69,107 @@ img{
   clear: both;
   display: block;
   margin: 1.5em auto;
+}
+
+
+/* ----------------------------------- */
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.container{
+  position: relative;
+ 
+  padding: 0 50px;
+  margin: auto;
+}
+
+header{
+  text-align: center;
+  background: #313030;
+}
+
+#sidebar{
+ position: relative;
+ 
+
+}
+
+.main-content {
+    width: 100%;
+}
+
+#content{
+ position: relative;
+
+
+}
+/* img{
+  width: 10px;
+} */
+  .post-1{
+    background-image: url("alexander-tsang-1322911-unsplash.jpg");
+  
+  }
+  .post-2{
+    background-image: url("ali-yahya-1326318-unsplash.jpg");
+  }
+    .post-3{
+    background-image: url("andy-feliciotti-1264256-unsplash.jpg");
+  }
+
+  /* width: 100%;
+    position: relative;
+    background: url() 50% 50% no-repeat;
+    background-size: cover;
+    background-clip: padding-box;
+    overflow: hidden;
+    margin-bottom: 10px;
+    padding-top: 50px; */
+}
+
+#footer p{
+    position: absolute;
+    background-color: black;
+    left: 0;
+    bottom: 0;
+    height: 100px;
+    width: 100%;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other on smaller screens (600px wide or less) */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
 }
