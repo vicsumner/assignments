@@ -1,0 +1,236 @@
+body{
+  padding: 0 !important;
+  margin: 0;
+}
+
+
+/* Start The navigation bar ---------------*/
+.navbar {
+  overflow: hidden;
+  background-color: #792121;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+
+/* Links inside the navbar */
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change background on mouse-over */
+.navbar a:hover {
+  background: #ddd;
+  color: black;
+}
+
+/* Main content */
+.main {
+  margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+/* End Nav ----------------*/
+
+
+body {
+  font-family: Arial;
+  padding: 20px;
+  background: #f1f1f1;
+}
+
+/* Header/Blog Title */
+.header {
+  width: 100%;
+  padding: 30px;
+  font-size: 40px;
+  text-align: center;
+  background: #607D8B;
+  background-image: url("john-jennings-430220-unsplash.jpg");
+  background-size: cover;
+  
+}
+
+.header h2 {
+    color: #ffffff;
+    text-shadow: 4px 2px 20px #000000;
+}
+
+.card h2 {
+    margin-bottom: 0;
+    background-color:#782223;
+    width: 60%;
+    padding: 5px 15px;
+    color: #f1f1f1;
+    font-family: serif;
+}
+.card h5 {
+    margin-top: 8px;
+}
+
+.card h3 {
+    background-color: #832727;
+    padding: 5px;
+    color: #ffffff;
+    font-family: serif;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn { 
+  float: left;
+  width: 70%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+.fakeimg-1{
+  background-image: url("marc-schafer-784959-unsplash.jpg");
+  background-color: #cccccc;
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+}
+
+.fakeimg-po-1 p{
+  background-color: rgba(120, 34, 35, 0.9);
+  color: #f1f1f1;
+  font-size: .75em;
+  padding: 9px;
+  text-align: center;
+  position: relative;
+  top: 143px;
+}
+
+.fakeimg-po-2 p{
+  background-color: rgba(120, 34, 35, 0.9);
+  color: #f1f1f1;
+  font-size: .75em;
+  padding: 9px;
+  text-align: center;
+  position: relative;
+  top: 143px;
+}
+
+.fakeimg-po-3 p{
+  background-color: rgba(120, 34, 35, 0.9);
+  color: #f1f1f1;
+  font-size: .75em;
+  padding: 9px;
+  text-align: center;
+  position: relative;
+  top: 143px;
+}
+
+
+.fakeimg-1 + p {
+    background-color:rgba(120, 34, 35, 0.9);
+    padding: 15px;
+    position: relative;
+    color: #ffffff;
+    bottom: 100px;
+    
+}
+
+.fakeimg-2{
+  background-image: url("steve-harvey-721238-unsplash.jpg");
+  background-color: #cccccc;
+  width: 100%;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+}
+
+.fakeimg-2 + p {
+    background-color: rgba(120, 34, 35, 0.9);
+    padding: 15px;
+    position: relative;
+    color: #ffffff;
+    bottom: 100px;
+}
+
+.fakeimg-po-1{
+  background-image: url("rawpixel-651333-unsplash.jpg");
+  width: 90%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border: 10px solid #f2eded;
+}
+
+.fakeimg-po-2{
+  background-image: url("jakob-owens-168406-unsplash.jpg");
+  width: 90%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border: 10px solid #f2eded;
+}
+
+.fakeimg-po-3{
+  background-image: url("rawpixel-678092-unsplash.jpg");
+  width: 90%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  border: 10px solid #f2eded;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.rightcolumn .card {
+    background-image: url(john-jennings-430220-unsplash.jpg);
+    background-size: cover;
+    padding: 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+  background-image: url(john-jennings-430220-unsplash.jpg);
+  background-size: cover;
+}
+
+.footer h2{
+  color: white;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn { 
+    width: 100%;
+    padding: 0;
+  }
+}

@@ -11,20 +11,20 @@
 
 // console.log(upperCaseMe("good morning!")) // GOOD MORNING!
 
-function upperCaseMe(str){
-  return str.toUpperCase();
-}
-upperCaseMe();
+// function upperCaseMe(str){
+//   return str.toUpperCase();
+// }
+// upperCaseMe();
 
 /*
     2. Write a function that takes a string and returns that string reversed.
 */
 
-function reverseMe(str) {
-  var splitStr = "What do I spell backwards?";
-  console.log(str.reverse());
-}
-reverseMe();
+// function reverseMe(str) {
+//   var splitStr = "What do I spell backwards?";
+//   console.log(str.reverse());
+// }
+// reverseMe();
   // Your code here
 // }
 
@@ -42,3 +42,9 @@ reverseMe();
 // }
 
 // console.log(sliceMe("This is the string to slice.", 10)) // This is th
+
+function addNumbers(paramOne, paramTwo){
+  var test = paramOne + paramTwo
+  console.log(test)
+}
+addNumbers(1,2);
