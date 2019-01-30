@@ -345,3 +345,36 @@ position: relative;
     left: 116px;
     top: 25px;
 }
+
+
+/* belize--------------------------------------------------------------- */
+
+.belize{
+width: 500px;
+height: 330px;
+border: 3px solid #000000; 
+background-color: #c81122;
+position: relative;
+    margin: auto;
+}
+.belize .box-blue{
+    width: 500px;
+    height: 250px;
+    background-color: #00377c;
+    position: absolute;
+    margin: auto;
+    top: 42px;
+
+}
+
+.belize .emblem{
+    background-image: url('belize-em.png'); 
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    position: absolute;
+    top: 26px;
+    left: 144px;
+    background-position: center;
+    background-size: cover;
+}
