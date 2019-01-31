@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div id="container">
+      <h1 class="title">Simply Calculator</h1>    
+      <div class="row-1">
+               
+                <label>Add Section: </label> <!-- label -->
+                <!-- input first number -->
+                <input id="n1" type="text"></input> 
+
+                <!--  operation symbol  -->
+                <p class="symbol">+</p>
+
+                <!-- input second number -->
+                <input id="n2" type="text"></input>
+
+                <!-- button with excuting function -->
+                <button onclick =calc() id="addBtn">Add</button> <br />
+
+                <h3>Result: </h3>
+                <div id="resultOne"></div>
+                
+      </div>
+      <div class="row-2">
+                <label>Subtract Section: </label>
+                <input id="n3" type="text"></input>
+                <p class="symbol">-</p>
+                <input id="n4" type="text"></input>
+                <button onclick =calcTwo();  id="subBtn">Subtract</button><br />
+                <h3>Result:</h3>
+                <div id="resultTwo"></div>
+               
+      </div>
+      <div class="row-3">
+                <label>Multipulication Section: </label>
+                <input id="n5" type="text"></input>
+                <p class="symbol">*</p>
+                <input id="n6" type="text"></input>
+                <button onclick =calcThree();  id="multiBtn">Multiply</button><br />
+                <h3>Result:</h3>
+                <div id="resultThree"></div>
+                
+      </div>
+  </div>
+
+
+
+
+<script src="app.js"></script>  
+</body>
+</html>
