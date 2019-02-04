@@ -12,11 +12,13 @@
     <header>
       <h1 class="page-title">Mario Pest Control</h1>
       <div id="totalArea">
-          <p>Total: $ </p>
+          <p>Total: $ <br>
+            <button>Submit</button>
+          </p>
 
       </div>
     </header>
-      <div class="main">
+      <div id="main">
 
         
         <div class="pipe-short">
@@ -25,7 +27,8 @@
               <div class="goo-caught">
                   <form  name="gooCap">
                     Goombas <br> Captured: <br>
-                    <input type="text"></input>
+                    <!-- area for capture goombas -->
+                    <input id="gooCapNum" type="text" value="0">></input>
                   </form>
               </div>
         </div>
@@ -35,8 +38,9 @@
               <div class="coins-2"></div>
               <div class="cheep-caught">
                 <form name="cheepsCap">
-                  Cheep-cheep <br> Captured: <br>
-                  <input type="text"></input>
+                  Cheep-cheeps <br> Captured: <br>
+                  <!-- area for capture cheeps -->
+                  <input id="cheepCapNum" type="text" value="0">></input>
                 </form>
               </div>
         </div>
@@ -45,16 +49,23 @@
           <div class="coins-3"></div>
               <div class="bomb-caught">
                 <form name="bobCap">
-                  Bob-omb <br>
+                  Bob-ombs <br>
                   Captured: <br>
-                  <input type="text"></input>
+                  <!-- area for capture bob-omb -->
+                  <input id="bobCapNum" type="text" value="0"></input>
                 </form>
               </div>
         </div>
           
         <div class="mario"></div>
       </div>
-    
+      <!-- button with excuting function -->
+    <div id="totalArea-1">
+        <p id="resultOne">
+          <button onclick = calc() id="addBtn"></button>
+        </p>
+        
+    </div>
     <footer>
       <ul>
         <li class="left-info">
