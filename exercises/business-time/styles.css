@@ -1,0 +1,43 @@
+.nav-main{
+  background-color: #555555;
+  background-image: url(sasha-freemind-1205293-unsplash.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+header h1{
+  font-size: 4em;
+  color: #ff6f69;
+  text-shadow: 1px 1px 19px   #ffffff;
+  margin: 50px;
+}
+
+.nav-main li{
+  list-style: none;
+  padding: 10px;
+  text-align: center;
+  font-size: 2em;
+  color: #ffffff;
+}
+
+.nav-main ul{
+  /* border: 5px solid #ffcc5c; */
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #ff6f69;
+}
+
+.nav-main ul > li:nth-child(1) {
+  /* background-color: #96ceb4;	 */
+}
+
+.nav-main ul > li:nth-child(2) {
+  /* background-color: #ff6f69; */
+}
+
+.nav-main ul > li:nth-child(3) {
+  /* background-color: #88d8b0; */
+}
