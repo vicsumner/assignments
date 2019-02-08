@@ -112,7 +112,7 @@ p a:hover {
 }
 
 .nav-main{
-  background-color: #555555;
+  background-color: #26314f;
   background-image: url(sasha-freemind-2.jpg);
   background-size: cover;
   background-position: center bottom;
@@ -203,7 +203,7 @@ label {
 }
 
 #contact-pg .nav-main {
-    background-color: #555555;
+    background-color: #26314f;
     background-image: url(sasha-freemind-2.jpg);
     background-size: cover;
     background-position: center bottom;
@@ -214,7 +214,7 @@ label {
 #contact-pg form {
     padding: 30%;
     padding-top: 0;
-    padding-bottom: 0;
+    padding-bottom: 90px;
     
 }
 
@@ -245,7 +245,7 @@ font-weight: 800;
 }
 
 #about-pg .nav-main{
-  background-color: #555555;
+  background-color: #26314f;
   background-image: url(sasha-freemind-2.jpg);
   background-size: cover;
   background-position: center bottom;
@@ -294,6 +294,5 @@ section {
 #contact-pg form {
     padding: 10%;
     padding-top: 0;
-    padding-bottom: 0;
-}
+    padding-bottom: 90px;
 }

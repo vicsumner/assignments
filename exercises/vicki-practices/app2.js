@@ -109,12 +109,36 @@
     // return function
     
 //function
-function myFunc(){
+// function myFunc(){
 
-}   
+// }   
 
 //named fucntion
 // anonymous function
 //callback function
 
+
+//--------------------------------------Friday Feb.8 2019
+// Higher Order Array Methods part 2
+// Method // Returns //What is it used for
+// map (very common)   -new array  // Specific info from  data  
+// filter (very common) -new array  // create condensed data from other data
+//for Each - nothing   /// for loop - can't specofy start or end point
+
+var numbers = [ 1,2,3,4,5,6,7,8,9,10]
+// every  - Boolean // Will return true if every item in arr passes our criteria
+
+// some   -Boolean   // Will return true if at least 1 item in the arr passes our criteria
+
+// find     -returns an Obj/number/string - finds the first instance of the thing you are looking
+var foundNum = numbers.find(function(num)){
+  return num === 7
+  
+}
+
+// findIndex
+
+// sort 
+
+// reduce
 
