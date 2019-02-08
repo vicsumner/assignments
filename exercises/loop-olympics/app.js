@@ -114,18 +114,7 @@ var peopleArray = [
 
 //another answer for silver #3---------------------------------------------
 
-function myFunction(arr) {
-  var names = []
-  var occupations =[]
 
-  for(i = 0; i<){
-    if(){
-  }
-  
-
-  }
-  
-}
 
 
 
