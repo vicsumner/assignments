@@ -10,31 +10,36 @@
 <body>
       <h1>Travel Form</h1>
       <form name="travelForm">
-          <label>First Name</label> 
-              <input type="text" name="firstName" placeholder="first name" value="First Name"></br>
+          <label>First Name:</label> 
+              <input type="text" name="firstName" placeholder="first name"></br><br>
           
-          <label>Last Name</label>
-              <input type="text" name="lastName" placeholder="last name" value="Last Name"><br>
+          <label>Last Name:</label>
+              <input type="text" name="lastName" placeholder="last name"><br><br>
 
-          <label>Age</label>
-              <input type="number" name="age" placeholder="age" value="Age"> <br>
+          <label>Age:</label>
+              <input type="number" name="age" placeholder="age"> <br><br>
 
-          <label>Gender</label>
-              <input type="radio" name="gender"  value="Gender"> <br>
+          <label>Gender:</label><br>
+          <div name="" id="gender">
+              <input type="radio" name="gender"> Male <br>
+              <input type="radio" name="gender">Female <br>
+          </div><br>
+              
+          
+        <label>Location:</label><br>
+              <!-- <input type="checkbox" name="location"  value="Location"> <br> -->
+              <input type="checkbox" name="newyork" >New York <br>
+              <input type="checkbox" name="miami"> Miami<br>
+              <input type="checkbox" name="slc">Salt Lake City<br><br>
 
-          <label>Location</label>
-              <input type="checkbox" name="location"  value="Location"> <br>
+          <label>Dietary Restrictions:</label><br>
+              <input type="checkbox" name="vegetarian">Vegetarian<br>
+              <input type="checkbox" name="lactose free">Lactose Free<br>
+              <input type="checkbox" name="kosher">Kosher<br>
+              <input type="checkbox" name="none">None<br>
 
-          <label>Dietary Restrictions</label>
-              <input type="checkbox" name="restrictions"  value="Restrictions"><br>
-
+        <input id="send" type="submit" value="Submit">
       </form>
-
-
-
-
-
-
 <script src="app.js"></script>  
 </body>
 </html>

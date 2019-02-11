@@ -7,6 +7,20 @@
       });
     });
 
+//----------------------------------------------
+var form = document.contact
+
+contact.addEventListener("submit", function(e){
+  e.preventDefault()
+  var fname  = contact.firstname.value
+  var lname = contact.lastname.value
+  var country = contact.country.value
+  var message = contact.message.value
+  alert("First Name: " + fname + "\nLast Name: " + lname + "\nCountry: " + country + "\nSubject: " + message)
+}) 
+
+
+//----------------------------------------------
 
 // function display()
 // {
@@ -18,13 +32,16 @@
 //   alert("FIRST NAME:" + x + "     " + "LAST NAME:" + y + "     " + "Country:" + z + "     " + "Subject:" + a);
 // }
 
-// window.onload = function () {
+// window.onload = function() {
   
 //   document.getElementById('send').onclick = function (e) {
+//    e.preventDefault()
 //     alert(document.getElementById("form_id").value);
 //     return false;
 //   }
 // }
+// function()
+
 
 // Submit form with id function.
 

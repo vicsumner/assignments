@@ -79,7 +79,7 @@ span.first-sen{
     font-style: italic;
     letter-spacing: 1px;
     font-size: 1.3em;
-    max-height: 407px;
+    /* max-height: 407px; */
     color: #ffffff;
     font-weight: 400;
     text-align: left;
@@ -283,7 +283,7 @@ section {
   margin: 0;
   padding:20px;
   line-height:1.3em;
-  max-height: 570px;
+  /* max-height: 570px; */
   margin-top: 25px;
   text-align: center;
   font-size: 1em;

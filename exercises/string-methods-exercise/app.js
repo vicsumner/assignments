@@ -30,14 +30,12 @@ var myStr = "Hello"
 function capitalizeAndLowercase(str){
   return myStr.charAt(0).toUpperCase() + myStr.charAt(1).toUpperCase() + "llo";
 }
-// console.log(capitalizeAndLowercase())
+console.log(capitalizeAndLowercase())
 
 
 //Ques. Three pt2 ------------------------------
 
 var a = "Hello WoRld"
-
-var c = 'jkasdnkjasdnfkajsdovadhslvndaskfndslkdvandslnf'
 function capilizeAndLowercase(str){
   var midIndex = (Math.floor(str.length / 2));
   // console.log(midIndex)
@@ -48,14 +46,14 @@ function capilizeAndLowercase(str){
   var upperCase1 = firstHalf.toUpperCase()
   // console.log(upperCase1)
   
-  var secondHalf = str.slice(midIndex)
+  var secondHalf = str.slice(midIndex, str.length) //(midIndex) works too
   var lowerCase1 = secondHalf.toLowerCase()
   // console.log(lowerCase1)
 
  var myAmazingAnswer = upperCase1 + " " + lowerCase1
  console.log(myAmazingAnswer)
 }
-capilizeAndLowercase(a)
+// capilizeAndLowercase(a)
 
 
 

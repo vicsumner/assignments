@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/vicsumner/assignments/issues"
   },
-  "homepage": "https://github.com/vicsumner/assignments#readme"
+  "homepage": "https://github.com/vicsumner/assignments#readme",
+  "dependencies": {
+    "readline-sync": "^1.4.9"
+  }
 }
