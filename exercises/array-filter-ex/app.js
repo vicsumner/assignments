@@ -8,7 +8,7 @@ var hasWon = false;
 function Hero(name) {
   this.name = name;
   this.attack = Math.floor(Math.random() * 35) + 11;
-  this.hp = 1000;
+  this.health = 1000;
   this.items = [];
   this.isAlive = true;
 }

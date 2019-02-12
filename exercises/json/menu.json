@@ -1,0 +1,50 @@
+"title": "JSON's Deli",
+"menu": {
+
+  "appetizers": [
+    { 
+      "name": "sliders",
+      "ingredients":["bread", "beef"],
+      "description": "small and yummy"
+    },
+    {
+      "name": "pan pizza",
+      "ingredients": ["bread", "sauce", "cheese"],
+      "description": "small and yummy"
+    }  
+  ],
+  "cold sandwiches": [{
+        "name": "turkey",
+        "ingredients": ["bread", "turkey"],
+        "description": "foot long"
+      },
+      {
+        "name": "ham",
+        "ingredients": [ "bread", "mustard","cheese", "VA ham"],
+        "description": "foot long"
+      }
+    ],
+
+  "hot sandwiches": [{
+        "name": "roast turkey",
+        "ingredients": ["bread","roast turkey", "lettuce" ],
+        "description": "foot long"
+      },
+      {
+        "name": "cuban",
+        "ingredients": ["bread","mustard","cheese","VA ham","pickle"],
+        "description": "foot long"
+      }
+    ],
+  "desserts": [
+    "smoothie",
+    "ice cream",
+    "black and white cookie"
+  ],
+  "drinks": [
+    "soda",
+    "juice",
+    "water"
+  ],
+
+}
