@@ -26,4 +26,4 @@ var sum = function(num){
   var b = 9;
   return a + b;
 }
-console.log(sum())
+console.log(sum())=
