@@ -125,16 +125,16 @@
 // filter (very common) -new array  // create condensed data from other data
 //for Each - nothing   /// for loop - can't specofy start or end point
 
-var numbers = [ 1,2,3,4,5,6,7,8,9,10]
+// var numbers = [ 1,2,3,4,5,6,7,8,9,10]
 // every  - Boolean // Will return true if every item in arr passes our criteria
 
 // some   -Boolean   // Will return true if at least 1 item in the arr passes our criteria
 
 // find     -returns an Obj/number/string - finds the first instance of the thing you are looking
-var foundNum = numbers.find(function(num)){
-  return num === 7
+// var foundNum = numbers.find(function(num)){
+//   return num === 7
   
-}
+// }
 
 // findIndex
 
@@ -142,3 +142,85 @@ var foundNum = numbers.find(function(num)){
 
 // reduce
 
+//--------------------------------------Friday Feb.14 2019-- ES6 practice
+
+// let name = "John"
+// let age = 101
+// let pets = ["cat", "dog"]
+// const petObjects = []
+
+// function runForLoop() {
+//   for (let i = 0; i < pets.length; i++) {
+//     let pet = { type: pets[i] }
+//     if (pets[i] === "cat") {
+//      let name = "fluffy"
+//     } else {
+//       let name = "spot"
+//     }
+//     pet.name = name
+//     petObjects.push(pet)
+//   }
+//   return name
+// }
+
+// runForLoop()
+
+
+
+//Task One--------------------------------------Friday Feb.14 2019-- ES6 practice
+
+// const carrots = ["bright orange", "ripe", "rotten"]
+
+// function mapVegetables(arr) {
+//   return arr.map(function (carrot) {
+//     return { type: "carrot", name: carrot }
+//   })
+// }
+// const carrots = ["bright orange", "ripe", "rotten"]
+
+// const mapVegetables = (arr) => arr.map((carrot) => ({ type: "carrot", name: carrot }))
+
+// console.log(mapVegetables(carrots))
+
+//Task Two--------------------------------------
+// const people = [
+//   {
+//     name: "Princess Peach",
+//     friendly: false
+//   },
+//   {
+//     name: "Luigi",
+//     friendly: true
+//   },
+//   {
+//     name: "Mario",
+//     friendly: true
+//   },
+//   {
+//     name: "Bowser",
+//     friendly: false
+//   }
+// ]
+
+// function filterForFriendly(arr) {
+// return arr.filter(function (person) {
+//     return !!person.friendly
+//   })
+// }
+
+// // console.log(filterForFriendly())
+
+// const filterForFriendly = (arr) => arr.filter((person) => !!person.friendly
+
+// console.log(arr())
+
+
+//Morning Practice--------------------------------------Friday Feb.14 2019-- ES6 practice-----
+//ES6 Practice - Slope Style----------------------
+
+function collectAnimals(...animals) {
+    return animals
+  }
+
+console.log(collectAnimals("dog", "cat", "mouse", "jackolope", "platypus"));
+// ["dog", "cat", "mouse", "jackolope", "platypus"]

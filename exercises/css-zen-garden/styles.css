@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Libre+Baskerville:400,400i');
+/* //font-family: 'Libre Baskerville', serif; */
+/* font-family: 'Julius Sans One', sans-serif; */
+
+* {
+    margin: 0;
+}
+
+body{
+    color: #325050;
+    background: #fff;
+    font-family: 'Libre Baskerville', sans-serif;
+    /* font-size: 70%; */
+}
+
+header h1{
+font-family: 'Julius Sans One', sans-serif;
+font-size: 2.4em;
+font-weight: 300;
+line-height: .80em;
+
+}
+
+.sub-title{
+  font-family: 'Libre Baskerville', sans-serif;
+  font-size: .5em;
+  opacity: .7;
+  font-style: italic;
+  line-height: .5em;
+}
+
+section {
+    padding-top: 40px;
+}
+
+p {
+    margin-bottom: 1.1em;
+    font-size: 13px;
+    line-height: 27px;
+    padding: 0 70px;
+}
+
+p:last-child{
+  margin-bottom: 25px !important;
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr;
+    
+}
+
+header {
+    font-size: 20px;
+    background-color: dodgerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    flex-direction: column;
+}
+
+header {
+    height: 230px;
+    padding: 20px 0 70px 0;
+    background: #2d6360 50% 0 url(huntington.jpg) no-repeat;
+    background-attachment: fixed, fixed, fixed, scroll;
+    background-image: url(contours.png), url(noise.png), url(gridlines.png), url(huntington.jpg);
+    background-position: 0 0, 0 0, -5px -25px, 0 50%;
+    background-repeat: repeat, repeat, repeat, no-repeat;
+    background-size: auto, auto, auto, cover;
+    text-align: center;
+    color: #fff;
+    text-align: left;
+}
+
+h2 {
+    font-family: 'Julius Sans One', sans-serif;
+    margin-top: 1.8em;
+    font-size: 1.9em;
+    font-weight: 300;
+    margin-bottom: .7em;
+    padding: 0 70px;
+}
+
+
+header h2 {
+  text-align: left;
+  
+}
+
+header::before {
+    display: inline-block;
+    content: ' ';
+    background-image: url(enso.svg);
+    background-size: 80px 80px;
+    height: 80px;
+    width: 80px;
+    position: relative;
+    top: 40px;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    /* padding: 10px; */
+    background-color:#fff;
+    /* padding: 32px; */
+
+}
+
+.visual-bg-1{
+
+    height: 100%;
+    background-attachment: scroll, scroll, fixed;
+    background-color: rgba(138,188,159,0.5);
+    background-image: url(contours-opaque.png), url(gridlines-opaque.png), url(bamboo.png);
+    background-repeat: repeat, repeat, no-repeat;
+    background-size: auto, auto, cover;
+}
+
+.ad-sec{
+    height: 100%;
+    background-image: url(contours.png), url(gridlines.png), url(noise.png), url(koi.jpg);
+    background-size: 50% auto, auto, auto, cover;
+    background-repeat: repeat, repeat, no-repeat;
+    background-size: auto, auto, cover;
+    padding: 50px 70px;
+    font-size: 22px;
+    line-height: 44px;
+    color:rgba(255, 255, 255, 0.4);
+    text-align: center;
+    font-style: italic;
+}
+
+.icon{
+  background: #134347;
+  padding: 30px;
+  clear: both;
+  padding: 3em 10%;
+  color: #fff;
+  text-align: center;
+}
+
+icon a{
+  display: inline-block;
+    overflow: hidden;
+    width: 40px;
+    height: 40px;
+    padding: 40px 0 0 0;
+    margin: 0 0.5em;
+    position: relative;
+    color: rgba(255, 255, 255, 0.5);
+    -webkit-transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
+    -moz-transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
+    transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
+}
+.icon > a :before{
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    overflow: visible;
+    font-size: 36px;
+    text-indent: 0;
+    font-family: 'verdemoderna';
+    /* speak: none; */
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+
+.icon a.zen-validate-html::before {
+    content: "5";
+}
+.ad-sec a{
+  color:rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-style: initial;
+}
+
+.ad-sec a:hover{
+  text-decoration: underline;
+ 
+}
+
+
+footer {
+    height: 100%;
+    background-color:#edf4f0;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 50px;
+}
+
+footer ul {
+    list-style: none;
+}
+
+footer ul li{
+    float: left;
+    width: 50%;
+    padding: 1.5em 10%;
+    border-top: solid 1px #d9e3dc;
+    color: #c0cac3;
+    font-style: italic;
+}
+
+footer ul li a.design-title{
+   font-family: 'Julius Sans One', sans-serif;
+   text-transform: uppercase;
+}  
+
+footer ul li a{
+    display: inline-block;
+    margin-bottom: 0.25em;
+    font-size: 1.2em;
+    font-style: normal;
+    font-style: none;
+    text-decoration: none;
+    color: #325050;
+    font-size: 1.4em;
+    
+    
+}
+
+footer li:nth-child(2n+1){
+    clear: left;
+}
+
+
+footer ul li a.artist-name{
+    color: #616857;
+    font-size: 1em;
+    font-style: normal;
+}
+
+
+
+
+
+@media only screen and (min-width: 700px){
+    #container {
+        grid-template-columns: 3fr 1fr;
+    }
+
+    main {
+        grid-column: 1 / 2;
+    }
+
+    footer {
+        grid-column: 2 / 3;
+        grid-row: 1 / span 3;
+        height: 100%;
+    }
+}
