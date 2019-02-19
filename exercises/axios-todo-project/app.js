@@ -12,11 +12,11 @@ axios.get('https://api.vschool.io/vicsumner/todo/').then(response => {
 }
 
 function listTodos(todosArr){
-  //Make 1 todo show up, then reuse that code to make all todos show up (unused direction)
   // console.log(firstTodo)
+
   for(let i = 0 ; i < todosArr.length; i++){
-//   //Make it show on the DOM
-//   // First Create Elements
+
+//   // First Create Elements/ Make it show on the DOM
       const todoContainer = document.createElement('div')
       
       const checkbox = document.createElement('input')
@@ -39,8 +39,6 @@ function listTodos(todosArr){
       title.textContent = todosArr[i].title
       price.textContent = todosArr[i].price
       description.textContent = todosArr[i].description
-      
-      
       
 
     checkbox.addEventListener("change", function (e) {
@@ -65,11 +63,12 @@ function listTodos(todosArr){
         title.style.textDecoration = "line-through"
         price.style.textDecoration = "line-through"
         description.style.textDecoration = "line-through"
+        imgUrl.style.WebkitFilter = "grayscale(100%)"
+        
       }
   
       
-// 3rd Append it to the DOM
-    
+// 3rd Append it to the DOM 
     todoContainer.appendChild(checkbox)
     todoContainer.appendChild(imgUrl)
     todoContainer.appendChild(title)
@@ -98,6 +97,7 @@ todoForm.addEventListener("submit", (e) => {
   todoForm.price.value = ""
   todoForm.description.value = ""
   todoForm.imgUrl.value = ""
+  
 console.log(newTodo)
 
   axios.post('https://api.vschool.io/vicsumner/todo/', newTodo).then(response => {

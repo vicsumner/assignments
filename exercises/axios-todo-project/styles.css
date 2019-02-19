@@ -1,13 +1,56 @@
+body {
+    padding: 30px 20px 50px 20px;
+    border: 2px solid #2563cf;
+    border-radius: 30px;
+}
+
+#todolist-container{
+  font-family: 'Gochi Hand', cursive;
+  color: #2563cf;
+}
+
+form > input[type="text"] {
+    position: relative;
+    width: 100%;
+}
+
+button.listbtn {
+    display: block;
+    width: 30%;
+    background: #2563cf;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
+}
+button.listbtn:hover{
+  background: #f07402;
+}
+h1 {
+    text-align: center;
+    color: #f07402;
+    /* text-decoration: underline; */
+    font-family:'Gochi Hand', cursive; 
+    font-size: 3em;
+    font-weight: 200;
+}
+
 p{
   margin: 0;
   text-transform: capitalize; 
   text-align: left;
+  margin-right: 5px;
 }
+
+.todo-container p:nth-child(2n):before {
+    content: "$";
+}
+
+
 .todo-container{
   border: 1px solid #cdcdcd;
   display: flex;
   justify-content: space-between;
-  margin: 5px;
+  margin: 7px 0;
   border-radius: 4px;
   padding: 5px;
 }
@@ -17,34 +60,21 @@ p{
 }
 
 
-
-
 /* Style the form */
 [name="addToForm"] {
-  background-color: #f44336;
-  padding: 30px 40px;
-  color: white;
-  text-align: center;
+    background-color: #fadf8b;
+    background-image: url(steve-johnson-1290244-unsplash.jpg);
+    background-size: cover; 
+    padding: 20px 20px;
+    color: white;
+    text-align: center;
+    border-radius: 3px;
+    display: flex;
+    justify-content: space-around;
 }
 
-/* Clear floats after the header */
-[name="addToForm"]:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
-/* input {
-  margin: 0;
-  border: none;
-  border-radius: 0;
-  width: 75%;
-  padding: 10px;
-  float: left;
-  font-size: 16px;
-} */
-
-/* Style the list items */
+/* Style the todo list items */
 #todolist-container div {
   cursor: pointer;
   position: relative;
@@ -54,56 +84,47 @@ p{
   font-size: 18px;
   transition: 0.2s;
   
-  /* make the list items unselectable */
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
 }
 
 img{
+    position: relative;
+    left: 1px; 
     width: 25%;
     height: 100%;
     border-radius: 8px;
     border: 1px solid #8c8888;
+    vertical-align: 20px;
+    margin-right: 10px;
 }
-/* Set all odd list items to a different color (zebra-stripes) */
-/* #todolist-container div:nth-child(odd) {
-  background: #f9f9f9;
-} */
 
 /* Darker background-color on hover */
 #todolist-container div:hover {
   background: #ddd;
 }
 
-/* When clicked on, add a background color and strike out text */
-#todolist-container div.checked {
-  background: #888;
-  color: #fff;
-  text-decoration: line-through;
-}
 
-/* Add a "checked" mark when clicked on */
-/* #todolist-container div.checked::before {
-  content: '';
-  position: absolute;
-  border-color: #fff;
-  border-style: solid;
-  border-width: 0 2px 2px 0;
-  top: 10px;
-  left: 16px;
-  transform: rotate(45deg);
-  height: 15px;
-  width: 7px;
-} */
 
 /* Style the close button */
 .todo-container button {
-  height: 20px;
-  text-align: center;
+    background: #2563cf;
+    height: 20px;
+    text-align: center;
+    color: #eee;
+    border-radius: 3px;
+    transition: 0.2s;
+    cursor: pointer;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
 }
 .todo-container button:hover {
-  background-color: #f44336;
+  background-color: #f07402;
   color: white;
+}
+
+.todo-container {
+    background-image: url(https://thenypost.files.wordpress.com/2018/10/102318-dogs-color-determine-disesases-life.jpg?quality=90&strip=all&w=618&h=410&crop=1);
+    position: relative;
+    background-size: contain;
+    background: black;
 }
