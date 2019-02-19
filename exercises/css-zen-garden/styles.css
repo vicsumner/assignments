@@ -6,12 +6,32 @@
     margin: 0;
 }
 
+ul, menu, dir {
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0px;
+
+}
+
 body{
     color: #325050;
     background: #fff;
     font-family: 'Libre Baskerville', sans-serif;
-    /* font-size: 70%; */
+    font-size: 70%;
 }
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    color: #0d8ba1;
+}  
+/* a:visited {
+    color: #1a5952;
+}  */
+a:hover, a:focus {
+    text-decoration: underline;
+} 
 
 header h1{
 font-family: 'Julius Sans One', sans-serif;
@@ -125,9 +145,9 @@ main {
     background-size: 50% auto, auto, auto, cover;
     background-repeat: repeat, repeat, no-repeat;
     background-size: auto, auto, cover;
-    padding: 50px 70px;
-    font-size: 22px;
-    line-height: 44px;
+    padding: 20px 40px;
+    font-size: 1.1em;
+    line-height: 2.1em;
     color:rgba(255, 255, 255, 0.4);
     text-align: center;
     font-style: italic;
@@ -145,6 +165,7 @@ main {
 icon a{
   display: inline-block;
     overflow: hidden;
+    text-decoration: none;
     width: 40px;
     height: 40px;
     padding: 40px 0 0 0;
@@ -155,26 +176,109 @@ icon a{
     -moz-transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
     transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
 }
-.icon > a :before{
-    display: block;
-    position: absolute;
+
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(verdemoderna.ttf);
+}
+div.icons{
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  background: #134347;
+  clear: both;
+  padding: 3em 10%;
+
+}
+div.icon-1{
+  font-family: myFirstFont;
     top: 3px;
     left: 0;
     overflow: visible;
     font-size: 36px;
     text-indent: 0;
-    font-family: 'verdemoderna';
-    /* speak: none; */
-    font-weight: normal;
+    font-weight: 200;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+div.icon-2{
+  font-family: myFirstFont;
+    font-family: myFirstFont;
+    top: 3px;
+    left: 0;
+    overflow: visible;
+    font-size: 36px;
+    text-indent: 0;
+    font-weight: 200;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+div.icon-3{
+  font-family: myFirstFont;
+    font-family: myFirstFont;
+    top: 3px;
+    left: 0;
+    overflow: visible;
+    font-size: 36px;
+    text-indent: 0;
+    font-weight: 200;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+div.icon-4{
+  font-family: myFirstFont;
+    font-family: myFirstFont;
+    top: 3px;
+    left: 0;
+    overflow: visible;
+    font-size: 36px;
+    text-indent: 0;
+    font-weight: 200;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+div.icon-5{
+  font-family: myFirstFont;
+    font-family: myFirstFont;
+    top: 3px;
+    left: 0;
+    overflow: visible;
+    font-size: 36px;
+    text-indent: 0;
+    font-weight: 200;
     font-variant: normal;
     text-transform: none;
     line-height: 1;
     -webkit-font-smoothing: antialiased;
 }
 
-.icon a.zen-validate-html::before {
-    content: "5";
+.icons a{
+  color: rgba(255, 255, 255, 0.5);
+  transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
 }
+
+.icons a:visited {
+    color: rgba(255, 255, 255, 0.2);
+    
+}
+
+.icons a:hover, footer a:focus {
+    color: rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+}
+
+
 .ad-sec a{
   color:rgba(255, 255, 255, 0.7);
   text-decoration: none;
@@ -190,22 +294,28 @@ icon a{
 footer {
     height: 100%;
     background-color:#edf4f0;
-    display: flex;
-    align-items: flex-start;
-    padding-top: 50px;
+    /* display: flex;
+    align-items: flex-start; */
+    
 }
 
 footer ul {
     list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 footer ul li{
-    float: left;
-    width: 50%;
+    /* float: left;
+    width: 50%; */
     padding: 1.5em 10%;
     border-top: solid 1px #d9e3dc;
     color: #c0cac3;
     font-style: italic;
+}
+
+footer ul:nth-child(2) li{
+    border-top: solid 1px #a0b9ad;
 }
 
 footer ul li a.design-title{
@@ -213,15 +323,13 @@ footer ul li a.design-title{
    text-transform: uppercase;
 }  
 
-footer ul li a{
-    display: inline-block;
-    margin-bottom: 0.25em;
-    font-size: 1.2em;
+footer ul li a:link{
+    /* margin-bottom: 0.25em; */
     font-style: normal;
     font-style: none;
     text-decoration: none;
-    color: #325050;
-    font-size: 1.4em;
+    color: #607476;
+    font-size: 1em;
     
     
 }
@@ -236,7 +344,14 @@ footer ul li a.artist-name{
     font-size: 1em;
     font-style: normal;
 }
-
+footer ul:nth-child(2) {
+    overflow: hidden;
+    background-color: rgba(138,188,159,0.5);
+    background-image: url(bamboo.png);
+    font-family: 'Julius Sans One', sans-serif;
+    text-transform: uppercase;
+    color: #607476;
+}
 
 
 

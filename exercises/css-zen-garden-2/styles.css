@@ -1,0 +1,87 @@
+*{
+  margin:0;
+  padding:0;
+}
+
+.container-1{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1em;
+  grid-auto-rows: minmax(50px, auto);
+}
+footer{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(50px, auto);
+}
+.container-1 > section{
+  background: #cccccc;
+}
+
+.container-1 > section:nth-child(odd){
+  background: #eeeeee;
+}
+
+.header{
+  grid-column:1/3; 
+}
+
+.footer{
+  grid-column: 1/3;
+  background: #134347;
+  color: #fff;
+}
+
+.footer > div:nth-child(1n){
+  background: rgb(169, 57, 57);
+}
+
+.footer > div:nth-child(2n){
+  background: rgb(170, 124, 124);
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(verdemoderna.ttf);
+}
+
+div.icon-1{
+  font-family: myFirstFont;
+  font-size: 2em;
+    /* display: block; */
+    top: 3px;
+    left: 0;
+    overflow: visible;
+    font-size: 36px;
+    text-indent: 0;
+    /* speak: none; */
+    font-weight: 200;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+}
+div.icon-2{
+  font-family: myFirstFont;
+  font-size: 2em;
+}
+div.icon-3{
+  font-family: myFirstFont;
+  font-size: 2em;
+}
+div.icon-4{
+  font-family: myFirstFont;
+  font-size: 2em;
+}
+div.icon-5{
+  font-family: myFirstFont;
+  font-size: 2em;
+}
+
+@media all and (max-width: 768px) {
+  .container-1 > section{
+  /* background: #000; */
+  grid-column: 1/3;
+}
+
+} 

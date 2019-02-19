@@ -1,3 +1,8 @@
+p{
+  margin: 0;
+  text-transform: capitalize; 
+  text-align: left;
+}
 .todo-container{
   border: 1px solid #cdcdcd;
   display: flex;
@@ -9,4 +14,96 @@
 
 .todo-container h1{
   text-align: center;
+}
+
+
+
+
+/* Style the form */
+[name="addToForm"] {
+  background-color: #f44336;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+/* Clear floats after the header */
+[name="addToForm"]:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* input {
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+} */
+
+/* Style the list items */
+#todolist-container div {
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  list-style-type: none;
+  background: #eee;
+  font-size: 18px;
+  transition: 0.2s;
+  
+  /* make the list items unselectable */
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+img{
+    width: 25%;
+    height: 100%;
+    border-radius: 8px;
+    border: 1px solid #8c8888;
+}
+/* Set all odd list items to a different color (zebra-stripes) */
+/* #todolist-container div:nth-child(odd) {
+  background: #f9f9f9;
+} */
+
+/* Darker background-color on hover */
+#todolist-container div:hover {
+  background: #ddd;
+}
+
+/* When clicked on, add a background color and strike out text */
+#todolist-container div.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+/* #todolist-container div.checked::before {
+  content: '';
+  position: absolute;
+  border-color: #fff;
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+} */
+
+/* Style the close button */
+.todo-container button {
+  height: 20px;
+  text-align: center;
+}
+.todo-container button:hover {
+  background-color: #f44336;
+  color: white;
 }
