@@ -2,6 +2,8 @@
 /* //font-family: 'Libre Baskerville', serif; */
 /* font-family: 'Julius Sans One', sans-serif; */
 
+
+
 * {
     margin: 0;
 }
@@ -81,8 +83,8 @@ header {
 }
 
 header {
-    height: 230px;
-    padding: 20px 0 70px 0;
+    height: 175px;
+    padding: 10px 0 40px 0;
     background: #2d6360 50% 0 url(huntington.jpg) no-repeat;
     background-attachment: fixed, fixed, fixed, scroll;
     background-image: url(contours.png), url(noise.png), url(gridlines.png), url(huntington.jpg);
@@ -92,6 +94,7 @@ header {
     text-align: center;
     color: #fff;
     text-align: left;
+    grid-column-start: span 3;
 }
 
 h2 {
@@ -345,9 +348,9 @@ footer ul li a.artist-name{
     font-style: normal;
 }
 footer ul:nth-child(2) {
-    overflow: hidden;
+    /* overflow: hidden;
     background-color: rgba(138,188,159,0.5);
-    background-image: url(bamboo.png);
+    background-image: url(bamboo.png); */
     font-family: 'Julius Sans One', sans-serif;
     text-transform: uppercase;
     color: #607476;
@@ -355,6 +358,10 @@ footer ul:nth-child(2) {
 
 
 
+
+@media only screen and (min-width:701px){
+
+}
 
 @media only screen and (min-width: 700px){
     #container {
@@ -367,7 +374,14 @@ footer ul:nth-child(2) {
 
     footer {
         grid-column: 2 / 3;
-        grid-row: 1 / span 3;
+        /* grid-row: 1 / span 3; */
         height: 100%;
-    }
+    } 
+    
+    footer ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
 }
+}
+

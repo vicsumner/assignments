@@ -1,60 +1,239 @@
-*{
-  margin:0;
-  padding:0;
+@import url('https://fonts.googleapis.com/css?family=Julius+Sans+One|Libre+Baskerville:400,400i');
+
+
+* {
+    margin: 0;
 }
 
-.container-1{
+ul{
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0px;
+
+}
+
+body{
+    color: #325050;
+    background: #fff;
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: 70%;
+}
+
+body{
+  background: #ffffff;
+    background: -moz-linear-gradient(left, #ffffff 0%, #ffffff 66%, #e5ede8 66%, #e5ede8 100%);
+    background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ffffff), color-stop(66%,#ffffff), color-stop(66%,#e5ede8), color-stop(100%,#e5ede8));
+    background: -webkit-linear-gradient(left, #ffffff 0%,#ffffff 66%,#e5ede8 66%,#e5ede8 100%);
+    background: -o-linear-gradient(left, #ffffff 0%,#ffffff 66%,#e5ede8 66%,#e5ede8 100%);
+    background: -ms-linear-gradient(left, #ffffff 0%,#ffffff 66%,#e5ede8 66%,#e5ede8 100%);
+    background: linear-gradient(to right, #ffffff 0%,#ffffff 66%,#e5ede8 66%,#e5ede8 100%);
+}
+
+p {
+    margin-bottom: 1.1em;
+    font-size: 13px;
+    line-height: 27px;
+    padding: 0 70px;
+}
+
+/* p:last-child{
+  margin-bottom: 25px !important;
+} */
+
+a:-webkit-any-link {
+    text-decoration: none;
+}
+
+a:link, a:visited {
+    /* color: #0d8ba1; */
+}  
+
+a:hover, a:focus {
+    text-decoration: underline;
+} 
+
+.grid-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 1em;
-  grid-auto-rows: minmax(50px, auto);
-}
-footer{
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-auto-rows: minmax(50px, auto);
-}
-.container-1 > section{
-  background: #cccccc;
+  grid-template-rows: 1fr;
 }
 
-.container-1 > section:nth-child(odd){
-  background: #eeeeee;
-}
-
-.header{
-  grid-column:1/3; 
-}
-
-.footer{
-  grid-column: 1/3;
-  background: #134347;
+.header { 
+  grid-area: 1 / 1 / 1 / 5; 
+  font-size: 20px;
+  background: #2d6360 50% 0 url(huntington.jpg) no-repeat;
+  background-attachment: fixed, fixed, fixed, scroll;
+  background-image: url(contours.png), url(noise.png), url(gridlines.png), url(huntington.jpg);
+  background-position: 0 0, 0 0, -5px -25px, 0 50%;
+  background-repeat: repeat, repeat, repeat, no-repeat;
+  background-size: auto, auto, auto, cover;
+  text-align: left;
   color: #fff;
+  padding: 40px;
+  padding-bottom: 41px;
 }
 
-.footer > div:nth-child(1n){
-  background: rgb(169, 57, 57);
+.header h1{
+font-family: 'Julius Sans One', sans-serif;
+font-size: 1.4em;
+font-weight: 300;
+line-height: .80em;
+/* position: relative;
+left: 50px; */
+float: left;
+margin-top: 25px;
+margin-left: 15px;
 }
 
-.footer > div:nth-child(2n){
-  background: rgb(170, 124, 124);
+.header h2 {
+  text-align: left;
 }
+
+.header-btn{
+  float: right;
+  background: rgba(255, 255, 255, 0.153);
+  padding: 0px 80px 0px 30px;
+  margin-top: 20px;
+}
+
+.header-btn p{
+  text-transform: uppercase;
+  font-family: 'Julius Sans One', sans-serif;
+  text-align: center;
+  padding: 0;
+  margin:0;
+  opacity: .7;
+  font-size: 0.5em;
+  padding-bottom: 3px;
+}
+
+.header-btn p:after{
+  content: ">";
+  position: relative;
+  left: 65px;
+  font-size: 35px;
+  font-weight: 900;
+  top: 8px;
+
+}
+
+.site-icon {
+    /* display: inline; */
+    background-image: url(enso.svg);
+    background-size: 76px 76px;
+    height: 76px;
+    width: 76px;
+    /* position: relative; */
+    float: left;
+    top: 40px;
+}
+
+h2 {
+    font-family: 'Julius Sans One', sans-serif;
+    margin-top: 1.8em;
+    font-size: 1.9em;
+    font-weight: 300;
+    margin-bottom: .7em;
+    padding: 0 70px;
+}
+
+.sub-title{
+  font-family: 'Libre Baskerville', sans-serif;
+  font-size: .5em;
+  opacity: .7;
+  font-style: italic;
+  line-height: .5em;
+  text-align: left;
+}
+
+.enlightenment { 
+  grid-area: 2 / 1 / 3 / 4; 
+  margin-top: 40px;
+}
+
+.sidebar { 
+  grid-area: 2 / 4 / 3 / 5; 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  padding-right: 60px;
+}
+
+.participation { 
+  grid-area: 3 / 1 / 4 / 5; 
+  background-attachment: scroll, scroll, fixed;
+  background-color: rgba(138,188,159,0.5);
+  background-image: url(contours-opaque.png), url(gridlines-opaque.png), url(bamboo.png);
+  background-repeat: repeat, repeat, no-repeat;
+  background-size: auto, auto, cover;
+}
+
+.requirements { 
+  grid-area: 4 / 1 / 5 / 5; 
+}
+
+.dave-s { 
+  grid-area: 5 / 1 / 6 / 5;
+  background-image: url(contours.png), url(gridlines.png), url(noise.png), url(koi.jpg);
+  background-size: 50% auto, auto, auto, cover;
+  background-repeat: repeat, repeat, no-repeat;
+  background-size: auto, auto, cover;
+  padding: 20px 40px;
+  font-size: 1.1em;
+  line-height: 2.1em;
+  color:rgba(255, 255, 255, 0.4);
+  text-align: center;
+  font-style: italic;
+}
+
+.icons{
+  grid-area: 6 / 1 / 7 / 5; 
+  background: #134347;
+  padding: 30px;
+  clear: both;
+  padding: 3em 10%;
+  color: #fff;
+  text-align: center;
+}
+
+.icons a{
+  display: inline-block;
+    overflow: hidden;
+    text-decoration: none;
+    width: 40px;
+    height: 40px;
+    padding: 40px 0 0 0;
+    margin: 0 0.5em;
+    position: relative;
+    color: rgba(255, 255, 255, 0.5);
+    -webkit-transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
+    -moz-transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
+    transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
+}
+
 
 @font-face {
   font-family: myFirstFont;
   src: url(verdemoderna.ttf);
 }
+div.icons{
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+  justify-content: space-around;
+  align-items: center;
+  background: #134347;
+  clear: both;
+  padding: 3em 10%;
 
+}
 div.icon-1{
   font-family: myFirstFont;
-  font-size: 2em;
-    /* display: block; */
     top: 3px;
     left: 0;
     overflow: visible;
     font-size: 36px;
     text-indent: 0;
-    /* speak: none; */
     font-weight: 200;
     font-variant: normal;
     text-transform: none;
@@ -63,25 +242,168 @@ div.icon-1{
 }
 div.icon-2{
   font-family: myFirstFont;
-  font-size: 2em;
+    font-family: myFirstFont;
+    top: 3px;
+    left: 0;
+    overflow: visible;
+    font-size: 36px;
+    text-indent: 0;
+    font-weight: 200;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
 }
 div.icon-3{
   font-family: myFirstFont;
-  font-size: 2em;
+    font-family: myFirstFont;
+    top: 3px;
+    left: 0;
+    overflow: visible;
+    font-size: 36px;
+    text-indent: 0;
+    font-weight: 200;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
 }
 div.icon-4{
   font-family: myFirstFont;
-  font-size: 2em;
+    font-family: myFirstFont;
+    top: 3px;
+    left: 0;
+    overflow: visible;
+    font-size: 36px;
+    text-indent: 0;
+    font-weight: 200;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
 }
 div.icon-5{
   font-family: myFirstFont;
-  font-size: 2em;
+    font-family: myFirstFont;
+    top: 3px;
+    left: 0;
+    overflow: visible;
+    font-size: 36px;
+    text-indent: 0;
+    font-weight: 200;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
 }
 
-@media all and (max-width: 768px) {
-  .container-1 > section{
-  /* background: #000; */
-  grid-column: 1/3;
+.icons a{
+  color: rgba(255, 255, 255, 0.5);
+  transition: color 0.25s ease-out, box-shadow 0.25s ease-out;
 }
 
-} 
+.icons a:visited {
+    color: rgba(255, 255, 255, 0.2);
+    
+}
+
+.icons a:hover, footer a:focus {
+    color: rgba(255, 255, 255, 0.3);
+    text-decoration: none;
+}
+
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li{
+    padding: 1.5em 10%;
+    border-top: solid 1px #d9e3dc;
+    color: #c0cac3;
+    font-style: italic;
+}
+
+.sidebar ul:nth-child(2) li{
+    border-top: solid 1px #a0b9ad;
+}
+
+.sidebar ul li:first-child{
+  border-top:none !important;
+  padding-top: 0;
+
+}
+
+.sidebar ul li a.design-title{
+   font-family: 'Julius Sans One', sans-serif;
+   text-transform: uppercase;
+}  
+
+.sidebar ul li a{
+    /* margin-bottom: 0.25em; */
+    font-style: normal;
+    font-style: none;
+    text-decoration: none;
+    color: #607476;
+    font-size: 1em;
+    
+    
+}
+
+.sidebar li:nth-child(2n+1){
+    clear: left;
+}
+
+
+.sidebar ul li a.artist-name{
+    color: #616857;
+    font-size: 1em;
+    font-style: normal;
+}
+.sidebar ul:nth-child(2) {
+    /* overflow: hidden;
+    background-color: rgba(138,188,159,0.5);
+    background-image: url(bamboo.png); */
+    font-family: 'Julius Sans One', sans-serif;
+    text-transform: uppercase;
+    color: #607476;
+}
+
+.ad-sec a{
+  color:rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  font-style: initial;
+}
+
+.ad-sec a:hover{
+  text-decoration: underline;
+ 
+}
+
+
+
+/* @media only screen and (min-width:701px){
+
+}
+
+@media only screen and (min-width: 700px){
+    #container {
+        grid-template-columns: 3fr 1fr;
+    }
+
+    main {
+        grid-column: 1 / 2;
+    }
+
+    .sidebar {
+        grid-column: 2 / 3;
+        /* grid-row: 1 / span 3; */
+        /* height: 100%;
+    }  */
+    
+    /* .sidebar ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+/* } 
