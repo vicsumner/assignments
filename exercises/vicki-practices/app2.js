@@ -218,23 +218,26 @@
 //Morning Practice--------------------------------------Friday Feb.14 2019-- ES6 practice-----
 //ES6 Practice - Slope Style----------------------
 
-function collectAnimals(...animals) {
-    return animals
-  }
+// function collectAnimals(...animals) {
+//     return animals
+//   }
 
 // console.log(collectAnimals("dog", "cat", "mouse", "jackolope", "platypus"));
 // ["dog", "cat", "mouse", "jackolope", "platypus"]
 
 
 //Morning Practice--------------------------------------Monday Feb.18 2019-- ES6 practice-----
-function Person(name,age,height){
-  this.name = name
-  this.age = age
-  this.height = height
-}
+// function Person(name,age,height){
+//   this.name = name
+//   this.age = age
+//   this.height = height
+// }
 
-Person.prototype.speak = function(){
-  console.log()
-}
+// Person.prototype.speak = function(){
+//   console.log()
+// }
 
-const harry = new Person ("harry", 14, 60)
+// const harry = new Person ("harry", 14, 60)
+
+//----------------------------------
+
