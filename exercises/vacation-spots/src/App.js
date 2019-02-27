@@ -30,8 +30,8 @@ let vacationSpots =[
 
 ]
   return(
-    <div
-      style={{border:'1px solid green', margin: 5, padding: 5}}>
+    <div className="cardList">
+      {/* style={{border:'1px solid green', margin: 5, padding: 5}} */}
       <CardsList vacationSpots={vacationSpots}/>
     </div>
   )

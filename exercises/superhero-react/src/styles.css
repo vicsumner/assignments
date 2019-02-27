@@ -1,0 +1,7 @@
+.superHero-div{
+  position: relative;
+  /* width: 100%; */
+  height: 700px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}

@@ -8,11 +8,11 @@ function XO(str) {
   let ocount = 0;
 
   for(let i = 0; i < str.length; i++){
-    if(str[i] === "x"){
+    if (str[i] === "x" || str[i] === "X" ){
        xcount++
     }
     
-    if (str[i] === "o") {
+    if (str[i] === "o" || str[i] === "O" ) {
       ocount++
     }
     

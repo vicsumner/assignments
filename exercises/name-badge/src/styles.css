@@ -1,0 +1,51 @@
+form{
+  padding: 30px 50px;
+  border: 2px solid #000;
+  border-radius: 4px;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.top-container{
+  display: flex;   
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.left, .right {
+  flex: 1 40%;   /* Initial width of 600px/2
+                      Grow to fill remaining space */
+  min-width: 0;    /* No minimal width */
+
+}
+
+.left{
+  margin-right:10px;
+}
+
+input{
+  border: 2px solid #000;
+  margin-bottom: 20px;
+  padding: 5px;
+
+}
+
+input[name=messageInput]{
+  position: relative;
+  width: 100%;
+  margin-right: 0;
+  height: 100px;
+  align-items: flex-start;
+  align-content: flex-start;
+}
+
+button{
+  display: block;
+  position: relative;
+  justify-content: center;
+}
+
+
+

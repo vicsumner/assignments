@@ -1,0 +1,21 @@
+
+{
+  "superHero":[
+    {
+      "name": "Nas",
+      "imgUrl":"https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2018%2F06%2Fnas-kanye-west-queens-listening-party-1.jpg?q=75&w=800&cbr=1&fit=max",
+      "catchPhrase": "Life a Bitch..."
+
+    },
+    {"name": "JayZ",
+      "imgUrl": "https://images.complex.com/complex/images/c_limit,w_680/fl_lossy,pg_1,q_auto/rhw7lk7f23lpf0bjor0j/jay-z-1988",
+      "catchPhrase":"I Got 99 problems and B isn't one"
+
+    },
+    {"name":"Diddy",
+      "imgUrl": "https://cdn3.movieweb.com/i/article/Qgy2ELruRe6XXstcCMEWsPncjHi40Q/798:50/Sean-Combs-Name-Change-Brother-Love-Diddy.jpg",
+      "catchPhrase": "Take dat, Take Dat..."
+
+    }
+  ]
+}
