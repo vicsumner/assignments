@@ -1,0 +1,46 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.header{
+  background-image:url(hit-list-header.png);
+  width: 100%;
+  position: relative;
+  height:100px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.container{
+  width:900px;
+  margin: 50px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-image: url(white-marble-texture-background-pattern-260nw-594495482.jpg);
+  background-position-y: 60px;
+  background-size:cover;
+}
+
+.items{
+position: relative;
+width: 180px;
+height: 220px;
+background-size: cover;
+background-repeat: no-repeat;
+/* border: 1px solid #000; */
+margin: 20px;
+justify-content: center;
+background-position: center;
+}
+
+.items h1{
+font-size: .85em;
+text-align: center;
+background-color: rgba(60, 85, 173, 0.85);
+position: relative;
+top: 185px;
+font-family: Arial, Helvetica, sans-serif;
+font-weight: 200;
+color:white;
+padding:10px 5px;
+}

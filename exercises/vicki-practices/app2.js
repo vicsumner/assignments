@@ -240,4 +240,13 @@
 // const harry = new Person ("harry", 14, 60)
 
 //----------------------------------
+//Create a function that takes an array of strings. Return all words in the array that are exactly four letters.
+
+function isFourLetters(arr) {
+  return arr.filter(x => x.length === 4);
+}
+console.log(isFourLetters(["Ryan", "Kieran", "Jason", "Matt"]))
+
+
+
 
