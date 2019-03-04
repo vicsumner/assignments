@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <!-- change -->
+  <div>
+
+    <h1>Some data binding</h1>
+    <h3>Type something in the input box, and then press tab or click outside the input box</h3>
+    <input id="change-me" />
+    <div id="output"></div>
+  </div>
+
+  <!-- click -->
+  <div>
+    <h1>Disappearing Box</h1>
+    <h3>Click the Box, I dare you</h3>
+    <div class="red-box"></div>
+
+  </div>
+  <!--keypress  -->
+  <div>
+    <h1>Key Code Translator</h1>
+    <h3>Press any key, and see what it's key code is</h3>
+    <div id="output-2"></div>
+
+  </div>
+
+
+  <!-- mousemove -->
+  <div>
+    <h1>x and y</h1>
+    <h3>move your mouse in the box to see the coordinates of your mouse</h3>
+    <div class="blue-box"></div>
+  </div>
+
+
+  <!-- submit -->
+  <div>
+    <form id="submit-me">
+      <input id="name" />
+      <input id="age" />
+      <button>Click Me</button>
+      <!-- the button knows that it belongs to this form because it's nested in it. 
+              A single button in a form will default to a submit button and will trigger a submit event -->
+    </form>
+  </div>
+  <script src="App.js"></script>
+</body>
+
+</html>
