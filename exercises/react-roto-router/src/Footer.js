@@ -7,7 +7,7 @@ const Footer = () => {
       <ul className="footer-list">
         <Link to='/'>Home</Link>
         <Link to='/about'>About</Link>
-        <Link to='/services'>Services</Link>
+        x<Link to='/services'>Services</Link>
       </ul>
     </div>
   )

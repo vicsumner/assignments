@@ -2,7 +2,7 @@ import React from 'react'
 
 const Todo = (props) => {
   
-  const {title, description, imgUrl, price, completed,  _id} = props
+  const {title, description, imgUrl, price, completed} = props
   
   return(
     <div style={{backgroundImage:`url(${imgUrl})`}}>
