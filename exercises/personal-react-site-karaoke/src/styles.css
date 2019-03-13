@@ -288,9 +288,13 @@ aside.ScrollUpButton__Container:focus, aside.ScrollUpButton__Toggled:focus {
 
 /* Media Queries */
 
+@media all and (max-width:1055px){
+  .homepg > h1 {
+    font-size: 80px;
+}
+}
+
 @media all and (max-width: 736px){
-
-
 
   .homepg > h1 {
     margin: 0 auto;

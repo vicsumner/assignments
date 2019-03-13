@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import axios from 'axios'
 import {Switch, Route, withRouter} from 'react-router-dom'
 import './styles.css'
+import noImage from './no_image_available.gif'
 
 import {CircleArrow as ScrollUpButton } from 'react-scroll-up-button';
 import AnchorLink from 'react-anchor-link-smooth-scroll'
@@ -151,7 +152,9 @@ class App extends Component {
     //console.log(this.state.artistAlbums)
     const artistInfoMap = this.state.artistAlbums.map(item => 
       <div className="artistArea">
-          <div className="albumCover" style={{ backgroundImage: `url(${item.strAlbumThumb})`}}></div>
+          <div className="albumCover" style={
+          { backgroundImage: item.strAlbumThumb ? `url(${item.strAlbumThumb})` : `url(https://cdn-dom-p.azureedge.net/-/media/DOM/PimDam/sorry-image-not-available.png?modified=20180213132206)`}
+            }></div>
           
           <div className="artistInfo">
             <p>{item.strAlbum}</p>

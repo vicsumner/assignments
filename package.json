@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/vicsumner/assignments#readme",
   "dependencies": {
+    "express": "^4.16.4",
     "readline-sync": "^1.4.9"
   }
 }
