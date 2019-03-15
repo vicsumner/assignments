@@ -5,14 +5,14 @@ const uuid = require('uuid/v4')
 let bounties =[
 
     {
-      name:"Sunshine",
+      firstName:"Sunshine",
       lastName: "Jones",
       living:"false",
       type: "Sith",
       _id: uuid()
     },
     {
-      name: "Ruddy",
+      firstName: "Ruddy",
       lastName: "Pine",
       living: "true",
       type: "Sith",
@@ -20,7 +20,7 @@ let bounties =[
 
     },
     {
-      name: "Bill",
+      firstName: "Bill",
       lastName: "Jenkins",
       living: "true",
       type: "Jedi",
@@ -28,7 +28,7 @@ let bounties =[
 
     },
     {
-      name: "Bob",
+      firstName: "Bob",
       lastName: "Rowen",
       living: "false",
       type: "Sith",
